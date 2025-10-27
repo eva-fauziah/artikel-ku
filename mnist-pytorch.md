@@ -2,10 +2,21 @@
 <!-- Heading utama (gunakan tanda # untuk H1). -->
 
 Pernah terpikir bagaimana mesin bisa mengenali tulisan tangan kita?  
-Dari angka di kertas ujian, nota belanja, sampai formulir digital — semuanya bisa dibaca otomatis berkat *Computer Vision* dan *Deep Learning*.  
+Dari angka di kertas ujian, nota belanja, sampai formulir digital semuanya bisa dibaca otomatis berkat *Computer Vision* dan *Deep Learning*.  
 
 Dataset yang sering dipakai untuk melatih model ini adalah **MNIST (Modified National Institute of Standards and Technology)**.  
 Dataset ini berisi 70.000 gambar angka tulisan tangan dari 0 sampai 9, berukuran 28x28 piksel.
+
+---
+
+## 🤖 Mengapa MNIST Penting?
+MNIST sering disebut sebagai “*Hello World*”-nya *Deep Learning*.  
+Dataset ini digunakan oleh peneliti dan pengembang untuk:
+- menguji performa algoritma baru di bidang *image classification*,  
+- membandingkan efisiensi model (seperti CNN, MLP, atau SVM),  
+- dan memahami konsep dasar *feature extraction* otomatis melalui *convolution layer*.  
+
+Meski sederhana, MNIST tetap menjadi benchmark klasik untuk menguji kemampuan model mengenali pola visual secara efisien.
 
 ---
 
