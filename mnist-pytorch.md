@@ -1,3 +1,71 @@
+# Mengenal MNIST dan Penerapan CNN Menggunakan PyTorch 🚀
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch Badge">
+  <img src="https://img.shields.io/badge/Deep%20Learning-blue?style=for-the-badge&logo=tensorflow" alt="Deep Learning Badge">
+  <img src="https://img.shields.io/badge/Computer%20Vision-FF69B4?style=for-the-badge&logo=opencv" alt="Computer Vision Badge">
+</p>
+
+---
+
+## I. Pendahuluan
+
+### 1. Latar Belakang
+
+Di era digital saat ini, kemampuan komputer untuk "melihat" dan memahami dunia melalui gambar, atau yang dikenal sebagai **Klasifikasi Citra (*Image Classification*)**, telah menjadi salah satu bidang paling revolusioner dalam Kecerdasan Buatan (AI). Klasifikasi citra adalah fondasi bagi banyak teknologi canggih, mulai dari diagnosis medis otomatis, kendaraan otonom, hingga pengenalan wajah. Kunci di balik akurasi dan keajaiban ini adalah **Jaringan Saraf Tiruan Konvolusional (*Convolutional Neural Network* atau CNN)**.
+
+### 2. Tujuan Artikel
+
+Artikel ini bertujuan untuk mengenalkan **MNIST**, yang sering dijuluki sebagai *dataset* "Hello World" bagi para peneliti dan pengembang *deep learning*. Selanjutnya, kita akan mengupas tuntas penerapan model CNN yang efektif untuk mengklasifikasikan digit-digit tulisan tangan ini, dengan menggunakan salah satu *framework* *deep learning* terpopuler saat ini: **PyTorch**.
+
+---
+
+## II. Mengenal Dataset MNIST
+
+### 1. Apa itu MNIST?
+
+**MNIST** merupakan singkatan dari **Modified National Institute of Standards and Technology**. Dataset ini adalah koleksi klasik yang berisi **70.000 gambar digit tulisan tangan** (angka 0 hingga 9). Secara spesifik, setiap gambar dalam MNIST memiliki **resolusi rendah $28 \times 28$ piksel**, dan disajikan dalam format **Grayscale** (hanya memiliki 1 kanal warna).  Kesederhanaan, namun kompleksitasnya yang cukup, menjadikannya titik awal yang sempurna untuk mempelajari dan menguji model klasifikasi.
+
+### 2. Peran MNIST
+
+Sejak dirilis, MNIST telah menjadi **tolok ukur (*benchmark*)** standar dalam komunitas *machine learning*. Ketika seorang peneliti mengembangkan arsitektur jaringan saraf atau algoritma pelatihan yang baru, hasil kinerjanya pada MNIST sering kali menjadi bukti awal efektivitas model tersebut. Mencapai akurasi di atas 99% pada MNIST menjadi target awal yang menandakan bahwa sebuah model klasifikasi siap untuk diuji pada dataset yang lebih kompleks dan beragam.
+
+---
+
+## III. Dasar-Dasar Convolutional Neural Network (CNN)
+
+### 1. Prinsip Kerja CNN
+
+**Convolutional Neural Network (CNN)** adalah jenis Jaringan Saraf Tiruan (JST) yang dirancang khusus untuk memproses data visual. Prinsip kerjanya meniru cara **korteks visual otak manusia** mengidentifikasi objek, yaitu dengan memecah gambar menjadi hierarki fitur yang semakin kompleks. CNN secara otomatis dapat mempelajari dan mengekstrak fitur penting (tepi, garis, bentuk) langsung dari data piksel, tanpa perlu rekayasa fitur manual.
+
+### 2. Komponen Utama CNN
+
+Sebuah arsitektur CNN umumnya terdiri dari tiga jenis lapisan inti:
+
+* **Lapisan Konvolusi (*Convolutional Layer*):** Ini adalah jantung dari CNN. Lapisan ini menggunakan filter atau *kernel* untuk melakukan operasi konvolusi pada gambar *input*, menghasilkan peta fitur (*feature map*) yang menyoroti fitur-fitur penting seperti tepi atau tekstur.
+* **Lapisan *Pooling* (*Pooling Layer*):** Biasanya menggunakan **Max-Pooling** untuk mengurangi dimensi spasial (*width* dan *height*) dari peta fitur. Tujuannya adalah mengurangi jumlah parameter dan komputasi, sekaligus membuat model lebih tangguh terhadap variasi posisi (translasi) pada citra.
+* **Lapisan *Fully Connected* (*Dense Layer*):** Setelah lapisan konvolusi dan *pooling* berhasil mengekstrak fitur, data di-*flatten* (diratakan) dan dimasukkan ke lapisan *fully connected* di akhir jaringan. Lapisan ini bertanggung jawab untuk melakukan klasifikasi akhir berdasarkan fitur-fitur yang telah dipelajari.
+
+---
+
+## IV. PyTorch: Pilihan Framework Modern
+
+### 1. Mengapa PyTorch?
+
+**PyTorch** adalah *framework* *deep learning* sumber terbuka yang dikembangkan oleh Facebook (Meta AI) dan kini menjadi pilihan utama dalam lingkungan penelitian dan pengembangan akademik. Keunggulan utamanya terletak pada sifat **grafik komputasi dinamis (*dynamic computation graph*)**-nya, yang memberikan fleksibilitas tinggi kepada pengembang untuk memodifikasi dan men-debug model dengan mudah selama proses pelatihan.
+
+### 2. Struktur Dasar PyTorch
+
+Untuk mengimplementasikan model *deep learning*, PyTorch menyediakan beberapa modul utama:
+
+| Modul PyTorch | Deskripsi Singkat |
+| :--- | :--- |
+| `torch.Tensor` | Struktur data dasar, mirip array NumPy, namun mendukung akselerasi GPU. |
+| `torch.nn` | Modul yang berisi semua blok bangunan (lapisan) untuk membangun jaringan saraf, seperti `Conv2d`, `MaxPool2d`, dan `Linear`. |
+| `torch.optim` | Menyediakan berbagai algoritma optimasi (*optimizer*) seperti SGD dan Adam, yang digunakan untuk menyesuaikan bobot model. |
+| `torch.utils.data.DataLoader` | Alat penting untuk pemuatan data (*loading*) dan pengelompokan data dalam bentuk *batch* secara efisien selama pelatihan. |
+
+---
 # 🔢 Mengenal MNIST dan Penerapan CNN Menggunakan PyTorch
 <!-- Heading utama (gunakan tanda # untuk H1). -->
 
