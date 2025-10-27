@@ -1,26 +1,14 @@
 # Mengenal MNIST dan Penerapan CNN Menggunakan PyTorch 🚀
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch Badge">
-  <img src="https://img.shields.io/badge/Deep%20Learning-blue?style=for-the-badge&logo=tensorflow" alt="Deep Learning Badge">
-  <img src="https://img.shields.io/badge/Computer%20Vision-FF69B4?style=for-the-badge&logo=opencv" alt="Computer Vision Badge">
-</p>
-
----
-
-## I. Pendahuluan
-
-### 1. Latar Belakang
 
 Di era digital saat ini, kemampuan komputer untuk "melihat" dan memahami dunia melalui gambar, atau yang dikenal sebagai **Klasifikasi Citra (*Image Classification*)**, telah menjadi salah satu bidang paling revolusioner dalam Kecerdasan Buatan (AI). Klasifikasi citra adalah fondasi bagi banyak teknologi canggih, mulai dari diagnosis medis otomatis, kendaraan otonom, hingga pengenalan wajah. Kunci di balik akurasi dan keajaiban ini adalah **Jaringan Saraf Tiruan Konvolusional (*Convolutional Neural Network* atau CNN)**.
 
-### 2. Tujuan Artikel
 
 Artikel ini bertujuan untuk mengenalkan **MNIST**, yang sering dijuluki sebagai *dataset* "Hello World" bagi para peneliti dan pengembang *deep learning*. Selanjutnya, kita akan mengupas tuntas penerapan model CNN yang efektif untuk mengklasifikasikan digit-digit tulisan tangan ini, dengan menggunakan salah satu *framework* *deep learning* terpopuler saat ini: **PyTorch**.
 
 ---
 
-## II. Mengenal Dataset MNIST
+## A. Mengenal Dataset MNIST
 
 ### 1. Apa itu MNIST?
 
@@ -32,7 +20,7 @@ Sejak dirilis, MNIST telah menjadi **tolok ukur (*benchmark*)** standar dalam ko
 
 ---
 
-## III. Dasar-Dasar Convolutional Neural Network (CNN)
+## B. Dasar-Dasar Convolutional Neural Network (CNN)
 
 ### 1. Prinsip Kerja CNN
 
@@ -48,7 +36,7 @@ Sebuah arsitektur CNN umumnya terdiri dari tiga jenis lapisan inti:
 
 ---
 
-## IV. PyTorch: Pilihan Framework Modern
+## C. PyTorch: Pilihan Framework Modern
 
 ### 1. Mengapa PyTorch?
 
@@ -66,28 +54,8 @@ Untuk mengimplementasikan model *deep learning*, PyTorch menyediakan beberapa mo
 | `torch.utils.data.DataLoader` | Alat penting untuk pemuatan data (*loading*) dan pengelompokan data dalam bentuk *batch* secara efisien selama pelatihan. |
 
 ---
-# 🔢 Mengenal MNIST dan Penerapan CNN Menggunakan PyTorch
-<!-- Heading utama (gunakan tanda # untuk H1). -->
-
-Pernah terpikir bagaimana mesin bisa mengenali tulisan tangan kita?  
-Dari angka di kertas ujian, nota belanja, sampai formulir digital semuanya bisa dibaca otomatis berkat *Computer Vision* dan *Deep Learning*.  
-
-Dataset yang sering dipakai untuk melatih model ini adalah **MNIST (Modified National Institute of Standards and Technology)**.  
-Dataset ini berisi 70.000 gambar angka tulisan tangan dari 0 sampai 9, berukuran 28x28 piksel.
-
----
-
-## 🤖 Mengapa MNIST Penting?
-MNIST sering disebut sebagai “*Hello World*”-nya *Deep Learning*.  
-Dataset ini digunakan oleh peneliti dan pengembang untuk:
-- menguji performa algoritma baru di bidang *image classification*,  
-- membandingkan efisiensi model (seperti CNN, MLP, atau SVM),  
-- dan memahami konsep dasar *feature extraction* otomatis melalui *convolution layer*.  
-
-Meski sederhana, MNIST tetap menjadi benchmark klasik untuk menguji kemampuan model mengenali pola visual secara efisien.
-
----
-
+## D. Contoh Implementasi MNIST
+## Klasifikasi Angka Tulisan Tangan Menggunakan PyTorch dan Dataset MNIST
 ## ⚙️ Arsitektur CNN untuk MNIST di PyTorch
 <!-- Heading kedua (gunakan ## untuk H2). -->
 
@@ -107,6 +75,15 @@ Berikut tabel ringkas parameternya:
 
 ---
 
+## 🔗 Lihat Hasil Eksperimen
+
+<!-- Format link: [teks tampil](alamat tautan) -->
+Kamu bisa melihat hasil eksperimen dan kode lengkap pada notebook berikut:
+
+👉 [**MNIST CNN Notebook**](https://github.com/eva-fauziah/artikel-ku/blob/main/Klasifikasi_Angka_Tulisan_Tangan_Menggunakan_PyTorch_dan_Dataset_MNIST.ipynb)
+
+---
+
 ## 📊 Hasil Pelatihan
 <!-- Tabel hasil training -->
 
@@ -122,12 +99,9 @@ Penurunan *loss* menandakan bahwa model semakin baik mengenali pola angka.
 
 ---
 
-## 🔗 Lihat Hasil Eksperimen
+## 💡 Insight
 
-<!-- Format link: [teks tampil](alamat tautan) -->
-Kamu bisa melihat hasil eksperimen dan kode lengkap pada notebook berikut:
-
-👉 [**MNIST CNN Notebook**](https://github.com/eva-fauziah/artikel-ku/blob/main/Klasifikasi_Angka_Tulisan_Tangan_Menggunakan_PyTorch_dan_Dataset_MNIST.ipynb)
+Hasil eksperimen ini menunjukkan bahwa kemampuan Convolutional Neural Network (CNN) dalam mengenali pola visual sederhana sangatlah kuat, bahkan pada arsitektur yang minimalis. Nilai loss yang menurun drastis dan akurasi yang mencapai sekitar 98% membuktikan bahwa model mampu belajar representasi fitur angka dengan efektif tanpa perlu rekayasa fitur manual. Hal ini menegaskan bahwa deep learning  khususnya CNN  dapat mengekstraksi informasi visual secara otomatis dan efisien, sehingga menjadi fondasi penting bagi aplikasi computer vision yang lebih kompleks seperti deteksi objek, pengenalan wajah, maupun analisis citra medis.
 
 ---
 
@@ -143,8 +117,11 @@ Kamu bisa mencoba kode latihan langsung di Colab melalui tautan di bawah ini:
 ## 📚 Referensi
 <!-- Daftar pustaka atau sumber jurnal -->
 
-1. Purwanto, A., & Hidayat, R. (2023). *Implementasi Convolutional Neural Network pada Dataset MNIST Menggunakan PyTorch*. **Jurnal Teknologi Informasi dan Komputer**, 5(2), 45–52.  
-2. Sari, D., & Nugroho, F. (2022). *Pengenalan Tulisan Tangan Menggunakan Deep Learning pada Dataset MNIST*. **Jurnal Sains dan Komputer Indonesia**, 4(1), 12–20.
+### 2. Daftar Pustaka
+
+[1]  Fitriati, D. "PERBANDINGAN KINERJA CNN LeNet 5 DAN EXTREME LEARNING MACHINE PADA PENGENALAN CITRA TULISAN TANGAN ANGKA," *Jurnal Teknologi Terpadu*, Vol. [2], No. [1], [2016]. Tersedia daring: [https://journal.nurulfikri.ac.id/index.php/JTT/article/view/45](https://journal.nurulfikri.ac.id/index.php/JTT/article/view/45)
+
+[2] Al-Hafizh F., Alamsyah A. (2024). Penerapan model deep-CNN untuk meningkatan akurasi klasifikasi bahasa isyarat alfabet menggunakan algoritma convolutional neural network. Indonesian Journal of Mathematics and Natural Sciences, 47(1), 1-11. Tersedia daring: [https://journal.unnes.ac.id/journals/JM/article/download/4560/319/10187](https://journal.unnes.ac.id/journals/JM/article/download/4560/319/10187)
 
 ---
 
