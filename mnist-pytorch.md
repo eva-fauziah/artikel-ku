@@ -43,7 +43,7 @@ Penurunan *loss* menandakan bahwa model semakin baik mengenali pola angka.
 
 ---
 
-## 🔗 Coba Sendiri di Google Colab
+## 🔗 Lihat Hasil Eksperimen
 
 <!-- Format link: [teks tampil](alamat tautan) -->
 Kamu bisa melihat hasil eksperimen dan kode lengkap pada notebook berikut:
