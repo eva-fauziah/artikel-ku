@@ -44,15 +44,22 @@ Penurunan *loss* menandakan bahwa model semakin baik mengenali pola angka.
 ---
 
 ## 🔗 Coba Sendiri di Google Colab
+
+<!-- Format link: [teks tampil](alamat tautan) -->
+Kamu bisa melihat hasil eksperimen dan kode lengkap pada notebook berikut:
+
+👉 [**MNIST CNN Notebook**](https://github.com/eva-fauziah/artikel-ku/blob/main/Klasifikasi_Angka_Tulisan_Tangan_Menggunakan_PyTorch_dan_Dataset_MNIST.ipynb)
+
+---
+
+## 🔗 Coba Sendiri di Google Colab
 <!-- Cara menambahkan link aktif -->
 
 Kamu bisa mencoba kode latihan langsung di Colab melalui tautan di bawah ini:
 
 👉 [**Buka Notebook di Google Colab**](https://colab.research.google.com/)
 
-<!-- Format link: [teks tampil](alamat tautan) -->
-
-[**Melihat Projek Eksperimen Disini**](https://github.com/eva-fauziah/artikel-ku/blob/main/Klasifikasi_Angka_Tulisan_Tangan_Menggunakan_PyTorch_dan_Dataset_MNIST.ipynb)
+---
 
 ## 📚 Referensi
 <!-- Daftar pustaka atau sumber jurnal -->
